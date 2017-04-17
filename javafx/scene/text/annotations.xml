@@ -1,0 +1,9 @@
+<root>
+    <item name='javafx.scene.text.Text'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+    <item name='javafx.scene.text.Text text'>
+        <annotation name='java.lang.Deprecated'/>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
