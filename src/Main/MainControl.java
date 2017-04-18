@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 
-public class Controller {
+public class MainControl {
     @FXML private Text mainMessage;
     public void ScheduleButton(ActionEvent actionEvent) {
         mainMessage.setText("Schedule");
