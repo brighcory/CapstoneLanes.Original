@@ -37,7 +37,7 @@
         <Text fx:id="mainMessage" text="Welcome To Capstone Lanes Management System"/>
     </GridPane>
     <GridPane GridPane.columnIndex="2">
-        <Text fx:id="SignOutButton" text="Sign Out" underline="true" GridPane.columnIndex="0"
+        <Text  text="Sign Out" underline="true" GridPane.columnIndex="0"
               textAlignment="RIGHT"/>
         <Button onAction="#HelpButton" text="Help"
                 GridPane.columnIndex="1"/>
