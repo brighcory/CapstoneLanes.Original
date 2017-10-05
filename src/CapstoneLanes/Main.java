@@ -1,4 +1,4 @@
-package Main;
+package CapstoneLanes;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,9 +8,10 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
+
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("CapstoneMainPageLayout.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/CapstoneMainPageLayout.fxml"));
         primaryStage.setTitle("Capstone");
         primaryStage.setScene(new Scene(root, 1500, 825));
         primaryStage.show();

@@ -1,0 +1,60 @@
+<!--
+
+ Project Name:    Capstone Lanes
+ Group:           Art Anderson, Cory Brighton, Mike Gray, Daniel Okenke
+ Purpose:         XML for building the GUI
+ Help From:       http://algs4.cs.princeton.edu/13stacks/LinkedStack.java.html
+
+ History:         04/17/2017: AEA: Create the class with fundamental attributes
+
+
+-->
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
+<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="CapstoneLanes.MainControl" stylesheets="/css/style.css">
+    <GridPane alignment="CENTER" hgap="10" vgap="10">
+        <Label text="Capstone Lanes"
+               GridPane.rowIndex="0"
+        />
+        <Text fx:id="Explore"
+              text="Explore"
+              GridPane.rowIndex="1"/>
+        <Button onAction="#ScheduleButton"
+                text="Schedule, Open, Close and View Lane Status"
+                GridPane.rowIndex="2"/>
+        <Button onAction="#FolioButton"
+                text="Open Sells and Services Folio for Purchases"
+                GridPane.rowIndex="3"/>
+        <Button onAction="#LeaguesButton"
+                text="Manage Bowling Leagues"
+                GridPane.rowIndex="4"/>
+        <Button onAction="#SearchButton"
+                text="Search for Bowling Supplies in Inventory and Catalog"
+                GridPane.rowIndex="5"/>
+
+        <!-- Second Column -->
+        <Label text="Lane Manager Bowling System"
+               GridPane.rowIndex="0"
+               GridPane.columnIndex="1"/>
+        <Text fx:id="company" text="Capstone Alliance, LLC."
+              textAlignment="CENTER"
+              GridPane.columnIndex="1"
+              GridPane.rowIndex="1"/>
+        <GridPane GridPane.columnSpan="2"
+                  GridPane.rowIndex="3"
+                  GridPane.columnIndex="1">
+            <Text fx:id="mainMessage" text="Welcome To Capstone Lanes Management System"/>
+        </GridPane>
+        <GridPane GridPane.columnIndex="2">
+            <Text fx:id="signout" text="Sign Out" underline="true" GridPane.columnIndex="0"
+                  textAlignment="RIGHT"/>
+            <Button onAction="#HelpButton" text="Help"
+                    GridPane.columnIndex="1"/>
+        </GridPane>
+    </GridPane>
+</StackPane>

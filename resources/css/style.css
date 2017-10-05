@@ -1,0 +1,44 @@
+/*
+ * Project Name:    Capstone Lanes
+ * Group:           Art Anderson, Cory Brighton, Mike Gray, Daniel Okenke
+ * Purpose:         Cascade Styling Sheet For GUI interface.
+ * Help From:       http://algs4.cs.princeton.edu/13stacks/LinkedStack.java.html
+ *
+ * History:         04/17/2017: AEA: Create the class with fundamental attributes
+ *
+*/
+
+/*Build the background image*/
+#pane{
+    -fx-background-image: url('/Images/GenericLanes.png');
+    -fx-background-size: 1500 825;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+/*Text
+Changes the text of the program in the gui.*/
+.text, #mainMessage, #Explore, #company, #signout {
+    -fx-fill: "White";
+    -fx-font-size: 30px;
+}
+/*Company logo test*/
+#company{
+    -fx-font-size: 25px;
+}
+
+/*Explore Bar Header*/
+#Explore{
+    -fx-font-size: 40px;
+}
+/*Sign out text*/
+#signout{
+    -fx-font-size: 15px;
+}
+
+/*Button's look*/
+.button{
+    -fx-background-size: 40px 25px;
+    -fx-background-color: rgba(0, 0, 255, .7);
+}
+
